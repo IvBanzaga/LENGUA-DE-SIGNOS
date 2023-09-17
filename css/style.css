@@ -1,0 +1,100 @@
+body {
+  background-color: #f8f9fa;
+  /* Cambiar el color de fondo a tu preferencia */
+}
+
+#best-prediction {
+  font-size: 24px;
+  /* Tamaño de fuente más grande */
+  font-weight: bold;
+  /* Texto en negrita */
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+#webcam-container {
+  margin: 2rem 0;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  /* Cambiar el color de fondo al pasar el ratón */
+}
+
+#label-container {
+  margin-top: 2rem;
+}
+
+/* Estilos para la columna derecha */
+#predictions-container {
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  /* Separación entre las dos columnas */
+}
+
+/* Estilo para la columna de imágenes */
+#image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* Espacio entre la predicción y las imágenes */
+}
+
+/* Estilo para las imágenes */
+.image {
+  width: 100px;
+  /* Ajusta el ancho de las imágenes según tus necesidades */
+  height: auto;
+  /* Mantener la relación de aspecto */
+  margin: 5px 0;
+  /* Espacio entre las imágenes */
+}
+
+/* Estilos personalizados para el menú de navegación */
+.navbar {
+  background-color: #343a40;
+  /* Cambia el color de fondo del menú */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  /* Cambia el color del texto del menú */
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;
+  /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Agregar margen entre los elementos del menú */
+.navbar-nav .nav-item {
+  margin-right: 4px;
+  /* Cambia el valor del margen según tus preferencias */
+}
+
+.imagen {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
