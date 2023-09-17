@@ -15,13 +15,13 @@
 <p align="center">
 
 
-  </a>
+  
 
 </p>
   <br>
-  <p align="center">
+
   ![screenshot](https://github.com/IvBanzaga/Lenguaje-de-Signos/blob/mai/interfaz.PNG)
-</p>
+
   <br>
 
-
+</a>
