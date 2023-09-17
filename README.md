@@ -19,8 +19,9 @@
 
 </p>
   <br>
-  
-  ![screenshot](https://github.com/IvBanzaga/Hospital/blob/main/11.PNG)
+  <p align="center">
+  ![screenshot](https://github.com/IvBanzaga/Lenguaje-de-Signos/blob/mai/interfaz.PNG)
+</p>
   <br>
 
 
