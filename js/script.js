@@ -5,20 +5,26 @@
 
     // Cargar el modelo de imagen y configurar la cámara web
     async function init() {
+        // Detener y eliminar la instancia de webcam existente si la hay
+        if (webcam) {
+            webcam.stop();
+            webcam = null;
+            document.getElementById("webcam-container").innerHTML = ''; // Limpiar el contenedor
+        }
+    
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
-
+    
         model = await tmImage.load(modelURL, metadataURL);
         maxPredictions = model.getTotalClasses();
-
+    
         // Función de conveniencia para configurar una cámara web
         const flip = true; // si se debe voltear la cámara web
         webcam = new tmImage.Webcam(500, 500, flip); // ancho, alto, voltear
         await webcam.setup(); // solicitar acceso a la cámara web
         await webcam.play();
         window.requestAnimationFrame(loop);
-
-
+    
         // agregar elementos al DOM
         document.getElementById("webcam-container").appendChild(webcam.canvas);
         labelContainer = document.getElementById("label-container");
@@ -26,6 +32,7 @@
             labelContainer.appendChild(document.createElement("div"));
         }
     }
+    
 
     async function loop() {
         webcam.update(); // actualizar el cuadro de la cámara web
